@@ -19,7 +19,7 @@ $(document).ready(function () {
  }
 });
 
-$('.page-header').on('scroll load', function() {
+$(window).on('scroll load', function() {
  var headerFixedHeight = 200;
  
  if ($(this).scrollTop() > headerFixedHeight && !($('body').hasClass("scrolled")) ) {
