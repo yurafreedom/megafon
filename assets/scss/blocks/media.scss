@@ -1,0 +1,291 @@
+@include for-size(mobile) {
+	.page-header {
+		padding-top: 15px;
+		padding-bottom: 15px;
+		&__row {
+			justify-content: space-between;
+		}
+		&__location-block, &__contacts-block, &__exit-block {
+			display: none;
+		}
+		&__logo {
+			margin-right: 0;
+		}
+		&__toggle {
+			display: block;
+		}
+	}
+
+	.heading-block {
+		padding-top: 60px;
+		&__background-block {
+			background-size: cover;
+			background-position: -424px;
+		}
+		&__title {
+			font-size: 36px;
+			padding-top: 52px;
+		}
+		&__description {
+			max-width: 150px;
+			font-size: 20px;
+			padding-bottom: 55px;
+		}
+	}
+
+	.rate-block {
+		padding-top: 50px;
+		padding-bottom: 50px;
+		&__title {
+			font-size: 30px;
+			margin-bottom: 23px;
+		}
+		&__slider .row {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: nowrap;
+			overflow-x: auto;
+			width: calc(100% + 30px);
+			margin-left: -15px;
+		}
+		&__slider .col-12 {
+			flex: unset;
+			flex-shrink: 0;
+			padding: 0;
+			width: auto;
+		}
+		&__card-block {
+			width: 240px;
+			padding: 25px;
+			margin-right: 10px;
+		}
+		&__card-name {
+			font-size: 20px;
+		}
+		&__card-price {
+			font-size: 36px;
+		}
+		&__card-period {
+			font-size: 16px;
+		}
+		&__card-wrapper {
+			margin-bottom: 21px;
+		}
+		&__card-option {
+			font-size: 16px;
+		}
+		&__social-block {
+			margin-top: 0;
+			margin-bottom: 30px;
+		}
+		&__social-link {
+			width: 30px;
+			height: 30px;
+			&:not(:last-child) {
+				margin-right: 10px;
+			}
+		}
+		.btn--rate {
+			padding-top: 13px;
+			padding-bottom: 11px;
+			font-size: 16px;
+		}
+	}
+
+	.advantages-block {
+		padding-top: 50px;
+		padding-bottom: 50px;
+		&__title {
+			font-size: 30px;
+			margin-bottom: 23px;
+		}
+		&__text {
+			font-size: 16px;
+			margin-bottom: 16px;
+		}
+		&__card {
+			margin-bottom: 15px;
+		}
+		&__card-photo {
+			margin-right: 10px;
+			width: 40px;
+			height: 40px;
+		}
+	}
+
+	.cooperation-block {
+		padding-top: 50px;
+		&__photo-block img {
+			width: 290px;
+			height: 168px;
+		}
+		&__title {
+			margin-top: 0;
+			font-size: 30px;
+			margin-bottom: 13px;
+		}
+		&__text {
+			font-size: 16px;
+			margin-bottom: 26px;
+		}
+		.btn--cooperation {
+			width: 165px;
+			font-size: 16px;
+			padding-top: 13px;
+			padding-bottom: 11px;
+			margin-bottom: 30px;
+		}
+	}
+
+	.connection-block {
+		padding-top: 90px;
+		padding-bottom: 50px;
+		&__title {
+			font-size: 30px;
+			margin-bottom: 23px;
+		}
+		&__form-title {
+			font-size: 18px;
+			margin-bottom: 16px;
+		}
+		&__form-wrapper {
+			margin-bottom: 30px;
+		}
+		&__form-control {
+			margin-bottom: 30px;
+		}
+		.input-wrapper {
+			width: 100%;
+		}
+		.input-wrapper.mb1 {
+			margin-bottom: 15px;
+		}
+		.input-wrapper.mb2 {
+			margin-bottom: 0;
+		}
+		&__form-date {
+			display: block;
+		}
+		&__form-date &__form-label {
+			margin-top: 5px;
+			font-size: 14px;
+			font-weight: 500;
+			margin-bottom: 12px;
+		}
+		&__form-address .input-wrapper {
+			width: 86px;
+		}
+		&__form-address &__form-input {
+			padding-right: 7px;
+		}
+		&__form-input {
+			padding-top: 12px;
+			padding-bottom: 11px;
+		}
+		&__validate-block {
+			margin-bottom: 47px;
+		}
+		&__validate-title {
+			font-size: 18px;
+			margin-bottom: 16px;
+		}
+		&__validate-label {
+			font-size: 14px;
+		}
+		.btn--connection {
+			width: 100%;
+		}
+		input[type="checkbox"]:checked + label, input[type="checkbox"]:not(:checked) + label {
+			display: flex;
+		}
+		input[type="checkbox"]:checked + label::before, input[type="checkbox"]:not(:checked) + label::before {
+			margin-right: 10px;
+		}
+		input[type="checkbox"]:checked + label::before, input[type="checkbox"]:not(:checked) + label::before {
+			padding: 0 12px;
+			height: 24px;
+		}
+		input[type="checkbox"]:checked + label::after, input[type="checkbox"]:not(:checked) + label::after {
+			top: 10px;
+			left: 2px;
+		}
+	}
+	
+	.page-footer {
+		padding-top: 30px;
+		padding-bottom: 30px;
+		&__contacts-block {
+			margin-bottom: 21px;
+		}
+		&__contacts-block a {
+			font-size: 16px;
+		}
+		&__right-part {
+			text-align: left;
+		}
+		&__mail-link {
+			font-size: 16px;
+		}
+		&__policy-block {
+			font-size: 14px;
+			margin-bottom: 102px;
+		}
+		&__copyright-block {
+			position: absolute;
+			top: auto;
+			left: 15px;
+			bottom: -190px;
+		}
+	}
+}
+
+@include for-size(tablet) {
+	.page-header {
+		&__row {
+			justify-content: space-between;
+		}
+		&__contacts-block {
+			display: none;
+		}
+		&__logo, &__location-block {
+			margin-right: 0;
+		}
+	}
+
+	.heading-block {
+		&__title {
+			font-size: 60px;
+			padding-top: 100px;
+		}
+		&__description {
+			font-size: 24px;
+			padding-bottom: 100px;
+		}
+	}
+
+	.rate-block {
+		padding-top: 60px;
+		padding-bottom: 60px;
+		&__card-block {
+			margin-bottom: 30px;
+		}
+	}
+
+	.advantages-block {
+		padding-top: 60px;
+		padding-bottom: 60px;
+		&__text {
+			margin-bottom: 30px;
+		}
+	}
+
+	.cooperation-block {
+		padding-top: 60px;
+	}
+
+	.connection-block {
+		&__form-address {
+			margin-top: 30px;
+		}
+	}
+}

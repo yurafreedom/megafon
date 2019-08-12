@@ -1,0 +1,39 @@
+.cooperation-block {
+	padding-top: 100px;
+	background-color: #00B956;
+	&__title {
+		display: block;
+		margin-top: 50px;
+		margin-bottom: 18px;
+		font-size: 48px;
+		font-weight: 500;
+		line-height: 1;
+		color: $gray-color;
+		span {
+			display: block;
+		}
+		span.violet {
+			color: #731982;
+		}
+		span.white {
+			color: #fff;
+		}
+	}
+	&__text {
+		display: block;
+		margin-bottom: 66px;
+		font-size: 18px;
+		line-height: 1;
+		font-weight: 400;
+		color: #fff;
+	}
+	&__photo-block {
+		display: inline-block;
+		img {
+			display: inline-block;
+			width: 687px;
+			height: 396px;
+			object-fit: contain;
+		}
+	}
+}

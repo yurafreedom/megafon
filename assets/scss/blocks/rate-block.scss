@@ -1,0 +1,124 @@
+.rate-block {
+	background-color: #ECECEC;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	&__title {
+		display: block;
+		margin-bottom: 58px;
+		font-size: 48px;
+		font-weight: 500;
+		line-height: 1;
+	}
+	&__card-block {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		padding: 30px;
+		background-color: #fff;
+		overflow: hidden;
+		z-index: 100;
+		transition: all 1s ease-in-out;
+		&:hover::before {
+			content: '';
+			position: absolute;
+			top: -102px;
+			left: -136px;
+			width: 466px;
+			height: 466px;
+			border-radius: 50%;
+			background-color: #731982;
+			z-index: -1;
+			transition: all 1s ease-in-out;
+		}
+	}
+	&__card-block:hover &__card-name,
+	&__card-block:hover &__card-period,
+	&__card-block:hover &__card-price,
+	&__card-block:hover &__card-option b,
+	&__card-block:hover &__card-option span {
+		color: #fff;
+	}
+	.icon--bestseller {
+		position: absolute;
+		top: 19px;
+		right: 15px;
+	}
+	&__card-name {
+		display: block;
+		margin-bottom: 10px;
+		font-size: 24px;
+		font-weight: 500;
+		line-height: 1;
+		color: $gray-color;
+	}
+	&__card-period {
+		font-size: 18px;
+		line-height: 1;
+		color: #828282;
+	}
+	&__card-wrapper {
+		margin-bottom: 28px;
+	}
+	&__card-price {
+		display: inline-block;
+		font-size: 48px;
+		font-weight: 500;
+		line-height: 1;
+		color: #00B956;
+		span {
+			font-family: 'Arial', sans-serif;
+			font-weight: 400;
+		}
+	}
+	&__card-option {
+		margin-bottom: 16px;
+		font-size: 18px;
+		line-height: 1.2;
+		font-weight: 400;
+		b {
+			color: $gray-color;
+			font-weight: 500;
+		}
+		span {
+			color: #828282;
+			font-weight: 400;
+		}
+	}
+	&__card-inner {
+		display: flex;
+		flex-direction: column;
+		margin-top: auto;
+	}
+	&__social-block {
+		display: flex;
+		flex-direction: row;
+		margin-top: 46px;
+		margin-bottom: 40px;
+	}
+	&__social-link {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		flex-shrink: 0;
+		border: 1px solid #E0E0E0;
+		border-radius: 50%;
+		width: 36px;
+		height: 36px;
+		transition: all 0.3s ease-in-out;
+		&:not(:last-child) {
+			margin-right: 8px;
+		}
+		&:hover, &:active, &:focus {
+			border: 1px solid #00B956;
+		}
+		&:hover .icon--social {
+			fill: #00B956;
+		}
+	}
+	.icon--social {
+		fill: #BDBDBD;
+		transition: all 0.3s ease-in-out;
+	}
+}

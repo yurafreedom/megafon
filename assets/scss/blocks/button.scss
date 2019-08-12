@@ -1,0 +1,111 @@
+.btn {
+	position: relative;
+	outline: none !important;
+	border: none;
+	cursor: pointer;
+	text-decoration: none !important;
+	background: none;
+	-webkit-appearance: none;
+	
+	display: inline-block;
+	width: 100%;
+	color: #fff;
+	border-radius: 200px;
+	background-color: #00B956;
+	text-align: center;
+	vertical-align: middle;
+	font-family: 'GTWalsheimPro', sans-serif;
+	font-size: 18px;
+	line-height: normal;
+	height: auto;
+	letter-spacing: 0.025em;
+	font-weight: 500;
+	
+	-webkit-transform: translateZ(0px);
+	-webkit-font-smoothing: antialiased;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+
+	padding-top: 15px;
+	padding-bottom: 15px;
+	
+	border: none;
+	
+	transition: all 0.3s ease-in-out;
+	
+	> * {
+		line-height: 1;
+	}
+	
+	&:hover {
+		box-shadow: none;
+	}
+	
+	&:active,
+	&:focus,
+	&:hover {
+		text-decoration: none !important;
+		outline: none !important;
+		box-shadow: none !important;
+	}
+}
+
+.btn--cabinet {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	background: none;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.0625;
+	color: $gray-color;
+	padding: 0;
+	svg {
+		transition: all 0.3s ease-in-out;
+	}
+	span {
+		padding-left: 8px;
+	}
+	&:hover, &:active, &:focus {
+		color: #00B956;
+	}
+	&:hover svg {
+		fill: #00B956;
+	}
+}
+
+.btn--exit {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	span {
+		display: block;
+		font-size: 16px;
+		line-height: 1;
+		font-weight: 400;
+		color: $gray-color;
+		padding-left: 8px;
+	}
+}
+
+.btn--rate {
+	&:hover, &:active, &:focus {
+		background-color: #00EE6F;
+		color: #fff;
+	}
+}
+
+.btn--cooperation {	
+	width: 210px;
+	color: #731982;
+	background-color: #fff;
+	&:hover, &:active, &:focus {
+		background-color: #731982;
+		color: #fff;
+	}
+}
+
+.btn--connection {
+	width: 280px;
+
+}

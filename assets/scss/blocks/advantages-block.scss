@@ -1,0 +1,45 @@
+.advantages-block {
+	padding-top: 100px;
+	padding-bottom: 70px;
+	&__title {
+		display: block;
+		margin-bottom: 28px;
+		font-size: 48px;
+		font-weight: 500;
+		line-height: 1;
+		color: $gray-color;
+	}
+	&__text {
+		display: block;
+		width: 100%;
+		max-width: 330px;
+		font-size: 18px;
+		line-height: 1;
+		color: #828282;
+		p {
+			margin: 0;
+		}
+	}
+	&__card {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		margin-bottom: 30px;
+	}
+	&__card-photo {
+		display: block;
+		flex-shrink: 0;
+		background-repeat: no-repeat;
+		background-size: cover;
+		width: 60px;
+		height: 60px;
+		margin-right: 20px;
+	}
+	&__card-text {
+		display: block;
+		margin: 0;
+		font-size: 18px;
+		line-height: 1;
+		color: #828282;
+	}
+}

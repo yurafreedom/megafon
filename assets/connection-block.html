@@ -1,0 +1,169 @@
+@@include('template/head.html', {
+	"pagetitle": "Главная страница",
+	"bodyclass": ""
+})
+@@include('template/page-header.html')
+
+
+<div class="main-page-wrap">
+	<div class="main-page-blocks">
+		<section class="connection-block">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<h2 class="connection-block__title">Подключение по тарифному плану</h2>
+					</div>
+				</div>
+				<form action="" class="connection-block__form">
+					<div class="connection-block__form-wrapper">
+						<div class="connection-block__form-control">
+							<div class="row">
+								<div class="col-12">
+									<div class="connection-block__form-title">Контактная информация</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-12 col-md-6 col-xl-4">
+									<div class="input-wrapper mb0 mb1">
+										<input type="tel" class="text-input connection-block__form-input" placeholder="Телефон для связи" required>
+									</div>
+								</div>
+								<div class="col-12 col-md-6 col-xl-4">
+									<div class="input-wrapper mb0">
+										<input type="email" class="text-input connection-block__form-input" placeholder="E-mail" required>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="connection-block__form-control">
+							<div class="row">
+								<div class="col-12">
+									<div class="connection-block__form-title">Данные для договора</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-12 col-md-4 col-xl-4">
+									<div class="input-wrapper">
+										<input type="text" class="text-input connection-block__form-input" placeholder="Фамилия" required>
+									</div>
+								</div>
+								<div class="col-12 col-md-4 col-xl-4">
+									<div class="input-wrapper">
+										<input type="name" class="text-input connection-block__form-input" placeholder="Имя" required>
+									</div>
+								</div>
+								<div class="col-12 col-md-4 col-xl-4">
+									<div class="input-wrapper">
+										<input type="text" class="text-input connection-block__form-input" placeholder="Отчество" required>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-12 col-md-6 col-xl-4">
+									<div class="connection-block__form-date">
+										<label for="date" class="connection-block__form-label">Дата рождения</label>
+										<div class="input-wrapper">
+											<input type="date" class="text-input connection-block__form-input" placeholder="__.__.____г." required>
+										</div>
+									</div>
+								</div>
+								<div class="col-12 col-md-6 col-xl-4">
+									<div class="input-wrapper mb2">
+										<input type="text" class="text-input connection-block__form-input" placeholder="Место рождения" required>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="connection-block__form-control">
+							<div class="row">
+								<div class="col-12">
+									<div class="connection-block__form-title">Паспортные данные</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-12 col-md-4 col-xl-4">
+									<div class="input-wrapper">
+										<input type="text" class="text-input connection-block__form-input" placeholder="Серия" required>
+									</div>
+								</div>
+								<div class="col-12 col-md-4 col-xl-4">
+									<div class="input-wrapper">
+										<input type="text" class="text-input connection-block__form-input" placeholder="Номер" required>
+									</div>
+								</div>
+								<div class="col-12 col-md-4 col-xl-4">
+									<div class="input-wrapper">
+										<input type="text" class="text-input connection-block__form-input" placeholder="Код подразделения" required>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-12 col-md-6 col-xl-4">
+									<div class="connection-block__form-date">
+										<label for="date" class="connection-block__form-label">Дата выдачи</label>
+										<div class="input-wrapper mb1">
+											<input type="date" class="text-input connection-block__form-input" placeholder="__.__.____г." required>
+										</div>
+									</div>
+								</div>
+								<div class="col-12 col-md-6 col-xl-4">
+									<div class="input-wrapper">
+										<input type="text" class="text-input connection-block__form-input" placeholder="Кем выдан" required>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="connection-block__form-control">
+							<div class="row">
+								<div class="col-12">
+									<div class="connection-block__form-title">Адрес регистрации</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-6 col-xl-4">
+									<div class="input-wrapper mb0 mb1">
+										<input type="text" class="text-input connection-block__form-input" placeholder="Город" required>
+									</div>
+								</div>
+								<div class="col-md-6 col-xl-4">
+									<div class="input-wrapper mb0 mb1">
+										<input type="text" class="text-input connection-block__form-input" placeholder="Улица" required>
+									</div>
+								</div>
+								<div class="col-md-6 col-xl-4">
+									<div class="connection-block__form-address">
+										<div class="input-wrapper mb0">
+											<input type="text" class="text-input connection-block__form-input" placeholder="Дом" required>
+										</div>
+										<div class="input-wrapper mb0">
+											<input type="text" class="text-input connection-block__form-input" placeholder="Корпус" required>
+										</div>
+										<div class="input-wrapper mb0">
+											<input type="text" class="text-input connection-block__form-input" placeholder="Кв./офис" required>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="connection-block__validate-block">
+						<div class="connection-block__validate-title">Подтвердите правильность данных</div>
+						<div class="connection-block__validate-wrapper">
+							<input type="checkbox" id="validate_checkbox" name="validate_checkbox" class="connection-block__validate-checkbox" checked>
+							<label class="connection-block__validate-label" for="validate_checkbox">Нажав на кнопку, я даю согласие на обработку персональных данных</label>
+						</div>
+					</div>
+					<button type="button" class="btn btn--connection">Оформить подключение</button>
+				</form>
+			</div>
+		</section>
+	</div>
+	@@include('template/page-footer.html')
+</div>
+
+@@include('template/sprite.html')
+@@include('template/popups.html')
+@@include('template/scripts.html')
+
+</body>
+</html>
