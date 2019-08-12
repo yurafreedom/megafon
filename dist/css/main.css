@@ -8705,6 +8705,16 @@ button.swiper-pagination-bullet {
       -ms-flex-negative: 0;
           flex-shrink: 0; }
 
+body.scrolled .page-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  -webkit-transform: translateY(0);
+     -moz-transform: translateY(0);
+      -ms-transform: translateY(0);
+       -o-transform: translateY(0);
+          transform: translateY(0); }
+
 .page-header {
   width: 100%;
   position: absolute;

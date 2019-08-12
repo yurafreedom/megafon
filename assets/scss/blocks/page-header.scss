@@ -9,6 +9,13 @@
 	flex-shrink: 0;
 }
 
+body.scrolled .page-header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	transform: translateY(0);
+}
+
 .page-header {
 	width: 100%;
 	position: absolute;

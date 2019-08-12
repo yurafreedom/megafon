@@ -21,11 +21,40 @@ $(document).ready(function () {
 
 $(window).on('scroll load', function() {
  var headerFixedHeight = 200;
- 
  if ($(this).scrollTop() > headerFixedHeight && !($('body').hasClass("scrolled")) ) {
   $('body').addClass("scrolled");
  } else if($(this).scrollTop() <= headerFixedHeight && $('body').hasClass("scrolled")) {
   $('body').removeClass("scrolled");
  }
- 
+});
+
+$.extend($.validator.messages, {
+    required: "Ошибка. Поле обязательно для заполнения",
+    email: "Ошибка. Пожалуйста, введите корректный адрес электронной почты",
+});
+
+$("form").each(function() {
+    $(this).validate({
+        errorPlacement: function(e, i) {
+              e.addClass("error-message"),
+              e.appendTo(i.parent("div"))
+        },
+        highlight: function(e) {
+            $(e).addClass("has-error").parent().addClass("has-error");
+        },
+        unhighlight: function(e) {
+            $(e).removeClass("has-error").parent().removeClass("has-error");
+        },
+        ignore: [],
+        rules: {
+            name: "required",
+            tel: {
+                required: !0
+            },
+            email: {
+                required: !0,
+                email: true
+            }
+        },
+    });
 });
