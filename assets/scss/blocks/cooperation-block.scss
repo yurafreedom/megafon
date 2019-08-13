@@ -1,10 +1,11 @@
 .cooperation-block {
 	padding-top: 100px;
+	padding-bottom: 99px;
 	background-color: #00B956;
 	&__title {
 		display: block;
 		margin-top: 50px;
-		margin-bottom: 18px;
+		margin-bottom: 26px;
 		font-size: 48px;
 		font-weight: 500;
 		line-height: 1;
@@ -21,14 +22,17 @@
 	}
 	&__text {
 		display: block;
-		margin-bottom: 66px;
+		margin-bottom: 70px;
 		font-size: 18px;
 		line-height: 1;
 		font-weight: 400;
 		color: #fff;
 	}
 	&__photo-block {
-		display: inline-block;
+		position: absolute;
+		top: 2px;
+		right: 0;
+		display: block;
 		img {
 			display: inline-block;
 			width: 687px;

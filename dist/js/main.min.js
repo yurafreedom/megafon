@@ -28,11 +28,6 @@ $(window).on('scroll load', function() {
  }
 });
 
-$.extend($.validator.messages, {
-    required: "Ошибка. Поле обязательно для заполнения",
-    email: "Ошибка. Пожалуйста, введите корректный адрес электронной почты",
-});
-
 $("form").each(function() {
     $(this).validate({
         errorPlacement: function(e, i) {
@@ -58,3 +53,8 @@ $("form").each(function() {
         },
     });
 });
+
+if ($('.js--datepicker').length) {
+    $( ".js--datepicker" ).datepicker();
+    $.datepicker.regional['ru'];
+}

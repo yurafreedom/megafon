@@ -115,6 +115,11 @@
 
 	.cooperation-block {
 		padding-top: 50px;
+		padding-bottom: 0;
+		&__photo-block {
+			position: relative;
+			top: 0;
+		}
 		&__photo-block img {
 			width: 290px;
 			height: 168px;
@@ -151,17 +156,8 @@
 		&__form-wrapper {
 			margin-bottom: 30px;
 		}
-		&__form-control {
-			margin-bottom: 30px;
-		}
 		.input-wrapper {
 			width: 100%;
-		}
-		.input-wrapper.mb1 {
-			margin-bottom: 15px;
-		}
-		.input-wrapper.mb2 {
-			margin-bottom: 0;
 		}
 		&__form-date {
 			display: block;
@@ -171,6 +167,9 @@
 			font-size: 14px;
 			font-weight: 500;
 			margin-bottom: 12px;
+		}
+		&__form-date .input-wrapper {
+			margin-bottom: 30px;
 		}
 		&__form-address .input-wrapper {
 			width: 86px;
@@ -281,6 +280,18 @@
 
 	.cooperation-block {
 		padding-top: 60px;
+		padding-bottom: 60px;
+		&__photo-block {
+			bottom: -60px;
+			top: auto;
+		}
+		&__photo-block img {
+			width: 400px;
+			height: 200px;
+		}
+		&__title {
+			margin-top: 0;
+		}
 	}
 
 	.connection-block {

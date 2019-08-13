@@ -1,10 +1,10 @@
 .rate-block {
 	background-color: #ECECEC;
-	padding-top: 100px;
+	padding-top: 88px;
 	padding-bottom: 100px;
 	&__title {
 		display: block;
-		margin-bottom: 58px;
+		margin-bottom: 70px;
 		font-size: 48px;
 		font-weight: 500;
 		line-height: 1;
@@ -14,7 +14,7 @@
 		display: flex;
 		flex-direction: column;
 		width: 100%;
-		padding: 30px;
+		padding: 24px 30px 30px 30px;
 		background-color: #fff;
 		overflow: hidden;
 		z-index: 100;
@@ -46,7 +46,7 @@
 	}
 	&__card-name {
 		display: block;
-		margin-bottom: 10px;
+		margin-bottom: 3px;
 		font-size: 24px;
 		font-weight: 500;
 		line-height: 1;
@@ -58,21 +58,24 @@
 		color: #828282;
 	}
 	&__card-wrapper {
-		margin-bottom: 28px;
+		margin-bottom: 27px;
 	}
 	&__card-price {
 		display: inline-block;
+		margin-right: 5px;
 		font-size: 48px;
 		font-weight: 500;
 		line-height: 1;
 		color: #00B956;
 		span {
+			display: inline-block;
+			margin-left: -5px;
 			font-family: 'Arial', sans-serif;
 			font-weight: 400;
 		}
 	}
 	&__card-option {
-		margin-bottom: 16px;
+		margin-bottom: 14px;
 		font-size: 18px;
 		line-height: 1.2;
 		font-weight: 400;
@@ -93,7 +96,7 @@
 	&__social-block {
 		display: flex;
 		flex-direction: row;
-		margin-top: 46px;
+		margin-top: 16px;
 		margin-bottom: 40px;
 	}
 	&__social-link {
