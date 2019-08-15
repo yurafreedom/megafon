@@ -8726,7 +8726,8 @@ body.scrolled .page-header {
   z-index: 100;
   padding-top: 25px;
   padding-bottom: 28px;
-  background-color: #fff; }
+  background-color: #fff;
+  z-index: 1000; }
   .page-header__row {
     display: -webkit-box;
     display: -webkit-flex;
