@@ -91,7 +91,7 @@ gulp.task('css:build', function () {
 		.pipe(autoprefixer(['last 20 versions', '> 0%']))
 		.pipe(gulp.dest(path.build.css)).pipe(rename({
 			suffix: '.min'
-		}))// .pipe(cleanCSS())
+		})).pipe(cleanCSS())
 		.pipe(sourcemaps.write('./'))
 		.pipe(gulp.dest(path.build.css))
 		.pipe(webserver.stream());

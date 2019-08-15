@@ -28,6 +28,11 @@ $(window).on('scroll load', function() {
  }
 });
 
+$.extend($.validator.messages, {
+    required: "Ошибка. Поле обязательно для заполнения",
+    email: "Ошибка. Пожалуйста, введите корректный адрес электронной почты",
+});
+
 $("form").each(function() {
     $(this).validate({
         errorPlacement: function(e, i) {

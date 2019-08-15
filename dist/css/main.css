@@ -8696,6 +8696,12 @@ button.swiper-pagination-bullet {
   padding: 0;
   overflow: hidden; }
 
+.error-message {
+  display: block;
+  margin-bottom: 0;
+  margin-top: 15px;
+  text-align: center; }
+
 .main-page-wrap {
   position: relative;
   display: block;
