@@ -59,7 +59,7 @@ $("form").each(function() {
     });
 });
 
-if ($('.js--datepicker').length) {
+if ($('.js--datepicker').length > 0) {
     $( ".js--datepicker" ).datepicker();
     $.datepicker.regional['ru'];
 }

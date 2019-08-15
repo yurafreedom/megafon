@@ -8,6 +8,8 @@
 // PLUGINS STYLE
 @import "plugins/bootstrap.min";
 @import "plugins/swiper.min";
+@import "plugins/jquery-ui.min";
+@import "plugins/jquery-ui.theme.min";
 
 // BLOCKS STYLE
 @import "blocks/button";
@@ -19,7 +21,7 @@
 @import "blocks/cooperation-block";
 @import "blocks/connection-block";
 @import "blocks/page-footer";
-// @import "blocks/media";
+@import "blocks/media";
 
 body,html {
 	-webkit-overflow-scrolling : touch !important;

@@ -42,7 +42,7 @@
 
 	<!-- CSS -->
 	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="css/media.css">
+<!-- 	<link rel="stylesheet" href="css/media.css"> -->
 </head>
 
 <body >
@@ -110,12 +110,12 @@
 							<div class="row">
 								<div class="col-12 col-md-6 col-xl-4">
 									<div class="input-wrapper">
-										<input type="tel" class="text-input connection-block__form-input" placeholder="Телефон для связи" required>
+										<input type="tel" class="text-input connection-block__form-input" name="tel" placeholder="Телефон для связи" required>
 									</div>
 								</div>
 								<div class="col-12 col-md-6 col-xl-4">
 									<div class="input-wrapper">
-										<input type="email" class="text-input connection-block__form-input" placeholder="E-mail" required>
+										<input type="email" class="text-input connection-block__form-input" name="email" placeholder="E-mail" required>
 									</div>
 								</div>
 							</div>
@@ -129,17 +129,17 @@
 							<div class="row">
 								<div class="col-12 col-md-4 col-xl-4">
 									<div class="input-wrapper">
-										<input type="text" class="text-input connection-block__form-input" placeholder="Фамилия" required>
+										<input type="text" class="text-input connection-block__form-input" name="surname" placeholder="Фамилия" required>
 									</div>
 								</div>
 								<div class="col-12 col-md-4 col-xl-4">
 									<div class="input-wrapper">
-										<input type="name" class="text-input connection-block__form-input" placeholder="Имя" required>
+										<input type="name" class="text-input connection-block__form-input" name="name" placeholder="Имя" required>
 									</div>
 								</div>
 								<div class="col-12 col-md-4 col-xl-4">
 									<div class="input-wrapper">
-										<input type="text" class="text-input connection-block__form-input" placeholder="Отчество" required>
+										<input type="text" class="text-input connection-block__form-input" name="patronymic" placeholder="Отчество" required>
 									</div>
 								</div>
 							</div>
@@ -148,13 +148,13 @@
 									<div class="connection-block__form-date">
 										<label for="form-date" class="connection-block__form-label">Дата рождения</label>
 										<div class="input-wrapper">
-											<input type="date" id="form-date" class="text-input connection-block__form-input js--datepicker" placeholder="__.__.____г." required>
+											<input type="text" id="form-date" name="text" class="text-input connection-block__form-input js--datepicker" placeholder="__.__.____г." required>
 										</div>
 									</div>
 								</div>
 								<div class="col-12 col-md-6 col-xl-4">
 									<div class="input-wrapper">
-										<input type="text" class="text-input connection-block__form-input" placeholder="Место рождения" required>
+										<input type="text" name="place" class="text-input connection-block__form-input" placeholder="Место рождения" required>
 									</div>
 								</div>
 							</div>
@@ -168,17 +168,17 @@
 							<div class="row">
 								<div class="col-12 col-md-4 col-xl-4">
 									<div class="input-wrapper">
-										<input type="text" class="text-input connection-block__form-input" placeholder="Серия" required>
+										<input type="text" name="series" class="text-input connection-block__form-input" placeholder="Серия" required>
 									</div>
 								</div>
 								<div class="col-12 col-md-4 col-xl-4">
 									<div class="input-wrapper">
-										<input type="text" class="text-input connection-block__form-input" placeholder="Номер" required>
+										<input type="text" name="number" class="text-input connection-block__form-input" placeholder="Номер" required>
 									</div>
 								</div>
 								<div class="col-12 col-md-4 col-xl-4">
 									<div class="input-wrapper">
-										<input type="text" class="text-input connection-block__form-input" placeholder="Код подразделения" required>
+										<input type="text" name="code" class="text-input connection-block__form-input" placeholder="Код подразделения" required>
 									</div>
 								</div>
 							</div>
@@ -187,13 +187,13 @@
 									<div class="connection-block__form-date">
 										<label for="date" class="connection-block__form-label">Дата выдачи</label>
 										<div class="input-wrapper">
-											<input type="date" class="text-input connection-block__form-input js--datepicker" placeholder="__.__.____г." required>
+											<input type="text" name="date" class="text-input connection-block__form-input js--datepicker" placeholder="__.__.____г." required>
 										</div>
 									</div>
 								</div>
 								<div class="col-12 col-md-6 col-xl-4">
 									<div class="input-wrapper">
-										<input type="text" class="text-input connection-block__form-input" placeholder="Кем выдан" required>
+										<input type="text" name="issued" class="text-input connection-block__form-input" placeholder="Кем выдан" required>
 									</div>
 								</div>
 							</div>
@@ -207,24 +207,24 @@
 							<div class="row">
 								<div class="col-md-6 col-xl-4">
 									<div class="input-wrapper">
-										<input type="text" class="text-input connection-block__form-input" placeholder="Город" required>
+										<input type="text" name="city" class="text-input connection-block__form-input" placeholder="Город" required>
 									</div>
 								</div>
 								<div class="col-md-6 col-xl-4">
 									<div class="input-wrapper">
-										<input type="text" class="text-input connection-block__form-input" placeholder="Улица" required>
+										<input type="text" name="street" class="text-input connection-block__form-input" placeholder="Улица" required>
 									</div>
 								</div>
 								<div class="col-md-6 col-xl-4">
 									<div class="connection-block__form-address">
 										<div class="input-wrapper">
-											<input type="text" class="text-input connection-block__form-input" placeholder="Дом" required>
+											<input type="text" name="house" class="text-input connection-block__form-input" placeholder="Дом" required>
 										</div>
 										<div class="input-wrapper">
-											<input type="text" class="text-input connection-block__form-input" placeholder="Корпус" required>
+											<input type="text" name="body" class="text-input connection-block__form-input" placeholder="Корпус" required>
 										</div>
 										<div class="input-wrapper">
-											<input type="text" class="text-input connection-block__form-input" placeholder="Кв./офис" required>
+											<input type="text" name="office" class="text-input connection-block__form-input" placeholder="Кв./офис" required>
 										</div>
 									</div>
 								</div>
@@ -234,7 +234,7 @@
 					<div class="connection-block__validate-block">
 						<div class="connection-block__validate-title">Подтвердите правильность данных</div>
 						<div class="connection-block__validate-wrapper">
-							<input type="checkbox" id="validate_checkbox" name="validate_checkbox" class="connection-block__validate-checkbox" checked>
+							<input type="checkbox" name="checkbox" id="validate_checkbox" name="validate_checkbox" class="connection-block__validate-checkbox" checked>
 							<label class="connection-block__validate-label" for="validate_checkbox">
 								<div class="connection-block__privacy-check">
 									<div class="connection-block__privacy-check-v"></div>
