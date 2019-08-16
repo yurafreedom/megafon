@@ -1,7 +1,15 @@
+@include for-size(small-mobile) {
+	.heading-block {
+		&__background-block {
+			background-position: 67% 50%;
+		}
+	}
+}
+
 @include for-size(mobile) {
 	.page-header {
-		padding-top: 15px;
-		padding-bottom: 15px;
+		padding-top: 11px;
+		padding-bottom: 10px;
 		&__row {
 			justify-content: space-between;
 		}
@@ -10,6 +18,9 @@
 		}
 		&__logo {
 			margin-right: 0;
+			width: 165px;
+			min-width: 165px;
+			height: 30px;
 		}
 		&__toggle {
 			display: block;
@@ -31,7 +42,7 @@
 		}
 		&__background-block {
 			background-size: cover;
-			background-position: -424px;
+			background-position: right center;
 		}
 		&__title {
 			padding-top: 43px;
@@ -124,7 +135,7 @@
 		}
 		&__text {
 			font-size: 16px;
-			margin-bottom: 11px;
+			margin-bottom: 3px;
 		}
 		&__card {
 			margin-bottom: 15px;
@@ -292,7 +303,7 @@
 		&__policy-block {
 			padding-top: 1px;
 			font-size: 14px;
-			margin-bottom: 27px;
+			margin-bottom: 30px;
 		}
 		&__copyright-block--desktop {
 			display: none;
@@ -305,7 +316,7 @@
 			width: 50px;
 			height: 50px;
 			margin-right: 12px;
-			// padding-bottom: 10px;
+			padding-bottom: 8px;
 			font-size: 20px;
 		}
 		&__copyright {
@@ -365,11 +376,12 @@
 		padding-top: 60px;
 		padding-bottom: 60px;
 		&__photo-block {
-			bottom: -60px;
+			bottom: 0;
 			top: auto;
+			margin-bottom: -60px;
 		}
 		&__photo-block img {
-			width: 400px;
+			width: 360px;
 			height: 200px;
 		}
 		&__title {

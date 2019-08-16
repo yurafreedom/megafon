@@ -23,8 +23,8 @@ body.scrolled .page-header {
 	top: 0;
 	left: 0;
 	z-index: 100;
-	padding-top: 11px;
-	padding-bottom: 10px;
+	padding-top: 25px;
+	padding-bottom: 28px;
 	background-color: #fff;
 	z-index: 1000;
 	&__row {
@@ -38,9 +38,9 @@ body.scrolled .page-header {
 		margin-right: 100px;
 		img {
 			display: inline-block;
-			width: 165px;
-			min-width: 165px;
-			height: 30px;
+			width: 200px;
+			min-width: 200px;
+			height: 36px;
 			object-fit: contain;
 		}
 	}
@@ -97,6 +97,9 @@ body.scrolled .page-header {
 				background-color: #C4C4C4;
 			}
 		}
+	}
+	&__copyright-age {
+		padding-bottom: 8px;
 	}
 	&__toggle {
 		display: none;
