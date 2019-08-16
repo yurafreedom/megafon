@@ -26,6 +26,12 @@
 		flex-direction: row;
 		align-items: center;
 	}
+	&__copyright-block--mobile {
+		display: none;
+	}
+	&__copyright-block--desktop {
+		display: flex;
+	}
 	&__copyright-age {
 		display: flex;
 		flex-direction: column;
