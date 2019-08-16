@@ -1,6 +1,6 @@
 .cooperation-block {
-	padding-top: 100px;
-	padding-bottom: 99px;
+	padding-top: 38px;
+	padding-bottom: 100px;
 	background-color: #00B956;
 	&__title {
 		display: block;
@@ -30,9 +30,10 @@
 	}
 	&__photo-block {
 		position: absolute;
-		top: 2px;
-		right: 0;
 		display: block;
+		right: 0;
+		bottom: 0;
+		margin-bottom: -100px;
 		img {
 			display: inline-block;
 			width: 687px;

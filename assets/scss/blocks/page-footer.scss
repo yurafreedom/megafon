@@ -35,7 +35,7 @@
 		width: 60px;
 		height: 60px;
 		margin-right: 20px;
-		padding-bottom: 10px;
+		// padding-bottom: 10px;
 		font-size: 24px;
 		line-height: 1;
 		font-weight: 500;
@@ -56,7 +56,7 @@
 		text-align: right;
 	}
 	&__mail-link {
-		display: block;
+		display: inline-block;
 		margin-bottom: 26px;
 		font-size: 20px;
 		line-height: 1;

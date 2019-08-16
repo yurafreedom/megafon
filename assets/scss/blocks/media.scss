@@ -17,36 +17,52 @@
 	}
 
 	.heading-block {
+		position: relative;
 		padding-top: 60px;
+		&::before {
+			content: '';
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background: linear-gradient(90deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+		}
 		&__background-block {
 			background-size: cover;
 			background-position: -424px;
 		}
 		&__title {
+			padding-top: 43px;
+			margin-bottom: 0;
+			padding-bottom: 15px;
 			font-size: 36px;
-			padding-top: 52px;
 		}
 		&__description {
+			line-height: 1;
 			max-width: 150px;
 			font-size: 20px;
-			padding-bottom: 55px;
+			padding-bottom: 60px;
 		}
 	}
 
 	.rate-block {
-		padding-top: 50px;
+		padding-top: 43px;
 		padding-bottom: 50px;
 		&__title {
 			font-size: 30px;
-			margin-bottom: 23px;
+			margin-bottom: 30px;
 		}
 		&__slider .row {
 			display: flex;
 			flex-direction: row;
 			flex-wrap: nowrap;
 			overflow-x: auto;
-			width: calc(100% + 30px);
 			margin-left: -15px;
+			width: auto;
+			margin-right: -15px;
+			padding-left: 15px;
 		}
 		&__slider .col-12 {
 			flex: unset;
@@ -56,23 +72,30 @@
 		}
 		&__card-block {
 			width: 240px;
-			padding: 25px;
+			padding: 20px 25px 25px 25px;
 			margin-right: 10px;
 		}
 		&__card-name {
 			font-size: 20px;
+			margin-bottom: 9px;
 		}
 		&__card-price {
 			font-size: 36px;
+			margin-right: 7px;
+			span {
+				margin-left: -2px;
+			}
 		}
 		&__card-period {
 			font-size: 16px;
 		}
 		&__card-wrapper {
-			margin-bottom: 21px;
+			margin-bottom: 16px;
 		}
 		&__card-option {
 			font-size: 16px;
+			line-height: 1.5;
+			margin-bottom: 5px;
 		}
 		&__social-block {
 			margin-top: 0;
@@ -86,25 +109,31 @@
 			}
 		}
 		.btn--rate {
-			padding-top: 13px;
-			padding-bottom: 11px;
+			padding-top: 9px;
+			padding-bottom: 14px;
 			font-size: 16px;
 		}
 	}
 
 	.advantages-block {
-		padding-top: 50px;
-		padding-bottom: 50px;
+		padding-top: 43px;
+		padding-bottom: 35px;
 		&__title {
 			font-size: 30px;
-			margin-bottom: 23px;
+			margin-bottom: 25px;
 		}
 		&__text {
 			font-size: 16px;
-			margin-bottom: 16px;
+			margin-bottom: 11px;
 		}
 		&__card {
 			margin-bottom: 15px;
+		}
+		&__card-text {
+			font-size: 16px;
+			line-height: 1;
+			padding: 0;
+			padding-bottom: 8px;
 		}
 		&__card-photo {
 			margin-right: 10px;
@@ -114,8 +143,7 @@
 	}
 
 	.cooperation-block {
-		padding-top: 50px;
-		padding-bottom: 0;
+		padding-top: 43px;
 		&__photo-block {
 			position: relative;
 			top: 0;
@@ -127,49 +155,59 @@
 		&__title {
 			margin-top: 0;
 			font-size: 30px;
-			margin-bottom: 13px;
+			margin-bottom: 16px;
 		}
 		&__text {
 			font-size: 16px;
-			margin-bottom: 26px;
+			margin-bottom: 30px;
 		}
 		.btn--cooperation {
 			width: 165px;
 			font-size: 16px;
-			padding-top: 13px;
-			padding-bottom: 11px;
-			margin-bottom: 30px;
+			padding-top: 9px;
+			padding-bottom: 14px;
+			margin-bottom: 31px;
 		}
 	}
 
 	.connection-block {
-		padding-top: 90px;
+		padding-top: 83px;
 		padding-bottom: 50px;
 		&__title {
 			font-size: 30px;
-			margin-bottom: 23px;
+			margin-bottom: 26px;
 		}
 		&__form-title {
 			font-size: 18px;
-			margin-bottom: 16px;
+			margin-bottom: 20px;
+		}
+		.text-input {
+			font-size: 14px;
+			padding-top: 11px;
+			padding-bottom: 14px;
 		}
 		&__form-wrapper {
-			margin-bottom: 30px;
+			margin-bottom: 26px;
+			padding-bottom: 4px;
 		}
 		.input-wrapper {
 			width: 100%;
+			margin-bottom: 15px;
 		}
 		&__form-date {
 			display: block;
 		}
+		&__form-control {
+			margin-bottom: 11px;
+		}
 		&__form-date &__form-label {
-			margin-top: 5px;
+			margin-top: 2px;
 			font-size: 14px;
 			font-weight: 500;
-			margin-bottom: 12px;
+			margin-bottom: 8px;
 		}
 		&__form-date .input-wrapper {
-			margin-bottom: 30px;
+			margin-bottom: 15px;
 		}
 		&__form-address .input-wrapper {
 			width: 86px;
@@ -178,21 +216,47 @@
 			padding-right: 7px;
 		}
 		&__form-input {
-			padding-top: 12px;
-			padding-bottom: 11px;
+			padding-top: 11px;
+			padding-bottom: 14px;
 		}
 		&__validate-block {
-			margin-bottom: 47px;
+			margin-bottom: 50px;
 		}
 		&__validate-title {
 			font-size: 18px;
-			margin-bottom: 16px;
+			margin-bottom: 17px;
 		}
 		&__validate-label {
 			font-size: 14px;
+			align-items: flex-start;
+		}
+		&__privacy-check {
+			width: 24px;
+			min-width: 24px;
+			height: 24px;
+			margin-right: 10px;
+			padding: 7px 8px;
+			margin-top: 4px;
+		}
+		&__privacy-text {
+			font-size: 14px;
+			line-height: 1;
+			padding-top: 0;
+		}
+		&__privacy-check-v {
+			top: 5px;
+			left: 3px;
+			width: 19px;
+			height: 15px;
+			background-size: contain;
 		}
 		.btn--connection {
 			width: 100%;
+			font-size: 16px;
+			letter-spacing: 0;
+			font-weight: 500;
+			padding-top: 9px;
+			padding-bottom: 14px;
 		}
 		input[type="checkbox"]:checked + label, input[type="checkbox"]:not(:checked) + label {
 			display: flex;
@@ -211,8 +275,8 @@
 	}
 	
 	.page-footer {
-		padding-top: 30px;
-		padding-bottom: 30px;
+		padding-top: 26px;
+		padding-bottom: 33px;
 		&__contacts-block {
 			margin-bottom: 21px;
 		}
@@ -226,14 +290,33 @@
 			font-size: 16px;
 		}
 		&__policy-block {
+			padding-top: 1px;
 			font-size: 14px;
-			margin-bottom: 102px;
+			margin-bottom: 27px;
 		}
-		&__copyright-block {
-			position: absolute;
-			top: auto;
-			left: 15px;
-			bottom: -190px;
+		&__copyright-block--desktop {
+			display: none;
+		}
+		&__copyright-block--mobile {
+			display: flex;
+			margin-bottom: 25px;
+		}
+		&__copyright-age {
+			width: 50px;
+			height: 50px;
+			margin-right: 12px;
+			// padding-bottom: 10px;
+			font-size: 20px;
+		}
+		&__copyright {
+			font-size: 14px;
+			padding-bottom: 4px;
+		}
+		&__creator-link {
+			font-size: 14px;
+			span {
+				margin-right: 8px;
+			}
 		}
 	}
 }
@@ -299,4 +382,14 @@
 			margin-top: 30px;
 		}
 	}
+
+	.page-footer {
+		&__copyright-block--mobile {
+			display: none;
+		}
+		&__copyright-block--desktop {
+			display: flex;
+		}
+	}
 }
+

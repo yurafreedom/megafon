@@ -1,5 +1,5 @@
 .advantages-block {
-	padding-top: 100px;
+	padding-top: 92px;
 	padding-bottom: 70px;
 	&__title {
 		display: block;
@@ -20,6 +20,9 @@
 		p {
 			margin: 0;
 		}
+	}
+	&__card-row-wrapper {
+		padding-top: 8px;
 	}
 	&__card {
 		display: flex;
@@ -42,5 +45,6 @@
 		font-size: 18px;
 		line-height: 1;
 		color: #828282;
+		padding: 1px 0 9px 0;
 	}
 }
